@@ -1,5 +1,5 @@
 import unittest
-import orban as O
+import orblette as O
 
 class TestRegexSyntax(unittest.TestCase):
 
