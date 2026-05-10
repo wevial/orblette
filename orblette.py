@@ -1,7 +1,7 @@
-# Orban: implementation of Thompson's construction algorithm in
+# Orblette: implementation of Thompson's construction algorithm in
 #        Python. "Regular Expression Search Algorithm"
 
-class OrbanHelper:
+class OrbletteHelper:
     def __init__(self):
         pass
 
@@ -356,7 +356,7 @@ def nfa_states(nfa):
     return (states, visited)
 
 def match(nfa, string):
-    O = OrbanHelper()
+    O = OrbletteHelper()
 
     if isinstance(nfa, str):
         nfa = regex2nfa(nfa)
@@ -384,7 +384,7 @@ def substring(nfa, string, start=None, end=None):
             else:
                 return substring_helper(states, string[1:])
 
-    O = OrbanHelper()
+    O = OrbletteHelper()
 
     # Truncate string to desired start/end points
     if start != None and end != None:
